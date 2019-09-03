@@ -65,14 +65,33 @@ print('Opened database successfully')
 #                 row[0],
 #                 row[1]))
 # conn.commit()
-if not DEBUG_PRINT:
-    for row in conn.execute("SELECT * FROM COUNTY LIMIT 10"):
-        print(row)
-
-    for row in conn.execute("SELECT * FROM ROADSTREET LIMIT 10"):
-        print(row)
-
-    for row in conn.execute("SELECT * FROM VILLAGE LIMIT 10"):
-        print(row)
-
+# if not DEBUG_PRINT:
+#     for row in conn.execute("SELECT * FROM COUNTY LIMIT 10"):
+#         print(row)
+#
+#     for row in conn.execute("SELECT * FROM ROADSTREET LIMIT 10"):
+#         print(row)
+#
+#     for row in conn.execute("SELECT * FROM VILLAGE LIMIT 100"):
+#         print(row)
+#
 conn.close()
+
+
+
+
+def selectCounty(county):
+    conn = sqlite3.connect('test.db')
+    c = conn.cursor()
+    c.execute("SELECT * FROM COUNTY WHERE COUNTY=?", (county,))
+
+    rows = c.fetchall()
+
+    for row in rows:
+        print(row)
+
+
+
+
+
+
