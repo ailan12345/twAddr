@@ -1,0 +1,9 @@
+README.md
+setup.py
+twAddr.egg-info/PKG-INFO
+twAddr.egg-info/SOURCES.txt
+twAddr.egg-info/dependency_links.txt
+twAddr.egg-info/top_level.txt
+twaddr/__init__.py
+twaddr/addrdata.py
+twaddr/tran.py
