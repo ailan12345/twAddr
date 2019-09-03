@@ -2,7 +2,7 @@ from distutils.core import setup
 
 setup(
     name = 'twAddr',
-    packages = ['zipcode'],
+    packages = ['twAddr'],
     #scripts = ['runner'],
     version = '1.0.1',
     description = 'Taiwan address related services',
