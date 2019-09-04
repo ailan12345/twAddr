@@ -80,20 +80,6 @@ def createDB():
 
 
 
-
-def selectCounty(county):
-    conn = sqlite3.connect('test.db')
-    c = conn.cursor()
-    c.execute("SELECT * FROM COUNTY WHERE COUNTY=?", (county,))
-
-    rows = c.fetchall()
-    if len(rows) ==1:
-        return rows
-    for row in rows:
-        print(row)
-
-
-
 if __name__ == '__main__':
     createDB()
 
