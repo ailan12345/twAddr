@@ -1,3 +1,6 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+
 import sys
 from twaddr import addrdata
 from setuptools.command.install import install
@@ -7,16 +10,16 @@ class twAddr_install(install):
     def run(self):
         print('Building Addr ... ')
         sys.stdout.flush()
-        twAddr.addrdata.createDB()
+        addrdata.createDB()
         install.run(self)
 
-from setuptools import setup
+from setuptools import setup, find_packages
 
 setup(
     name = 'twAddr',
-    packages = ['twaddr'],
+    packages =  find_packages(),
     #scripts = ['runner'],
-    version = '1.0.6',
+    version = '1.0.7',
     description = 'Taiwan address related services',
     author = 'Ailan',
     author_email = 'karta2599434@gmail.com',

@@ -1,13 +1,14 @@
 import os
 
-DEBUG = True
+DEBUG = False
 DEBUG_PRINT = False
 
 if DEBUG:
-    BASE_DIR = os.path.join(os.getcwd(), '桌面/twAddr/twAddr')
+    BASE_DIR = os.path.join(os.getcwd(), '桌面/twaddr/twaddr')
     print('開發 :', BASE_DIR)
 else:
     BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+    print('online :', BASE_DIR)
 
 countyCSV = os.path.join(BASE_DIR, 'county.csv')
 roadStreetCSV = os.path.join(BASE_DIR, 'roadStreet.csv')

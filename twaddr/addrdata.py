@@ -94,6 +94,7 @@ def selectCounty(county):
 
 
 
-
+if __name__ == '__main__':
+    createDB()
 
 
