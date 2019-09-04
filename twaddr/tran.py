@@ -2,7 +2,7 @@
 import sqlite3
 
 addr = '41349 臺中市霧峰區吉峰東路168號'
-county = '臺中市霧峰區'
+county = '臺中市'
 village = '南富村'
 roadStreet = '吉峰東路'
 
@@ -15,7 +15,7 @@ def selectCounty(county):
     # c.execute("SELECT * FROM COUNTY WHERE COUNTY=?", (county,))
 
     c = conn.cursor()
-    c.execute("SELECT * FROM COUNTY WHERE COUNTY=?", (f'{county}',))
+    c.execute('SELECT * FROM COUNTY WHERE COUNTY LIKE \"%{0}%\"'.format(county,))
 
     rows = c.fetchall()
     # if len(rows) == 1:
