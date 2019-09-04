@@ -16,10 +16,10 @@ class twAddr_install(install):
 from setuptools import setup, find_packages
 
 setup(
-    name = 'twAddr',
+    name = 'twaddr',
     packages =  find_packages(),
     #scripts = ['runner'],
-    version = '1.0.7',
+    version = '1.0.1',
     description = 'Taiwan address related services',
     author = 'Ailan',
     author_email = 'karta2599434@gmail.com',
@@ -27,6 +27,6 @@ setup(
     classifiers = [],
     url = 'https://github.com/ailan12345/twAddr',
 
-    package_data = {'zipcode': ['*.csv']},
+    package_data = {'twaddr': ['*.csv']},
     cmdclass = {'install': twAddr_install},
 )

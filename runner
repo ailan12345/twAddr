@@ -1,0 +1,7 @@
+from twaddr import addrdata
+class twAddr_install(install):
+    def run(self):
+        print('Building Addr ... ')
+        sys.stdout.flush()
+        addrdata.createDB()
+        install.run(self)
