@@ -4,7 +4,7 @@ DEBUG = False
 DEBUG_PRINT = False
 
 # if DEBUG:
-#     BASE_DIR = os.path.join(os.getcwd(), 'twaddr')
+#     BASE_DIR = os.path.join(os.getcwd(), '桌面/twAddr/twaddr')
 #     print('開發 :', BASE_DIR)
 # else:
 #     BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -13,7 +13,7 @@ BASE_DIR = os.path.dirname(__file__)
 
 countyCSV = os.path.join(BASE_DIR, 'county.csv')
 
-roadStreetCSV = os.path.join(BASE_DIR, 'roadStreet.csv')
+roadStreetCSV = os.path.join(BASE_DIR, 'merge.csv')
 villageCSV = os.path.join(BASE_DIR, 'village.csv')
 
 

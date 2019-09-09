@@ -19,7 +19,7 @@ setup(
     name = 'twaddr',
     packages =  find_packages(),
     #scripts = ['runner'],
-    version = '1.0.1',
+    version = '1.0.2',
     description = 'Taiwan address related services',
     author = 'Ailan',
     author_email = 'karta2599434@gmail.com',

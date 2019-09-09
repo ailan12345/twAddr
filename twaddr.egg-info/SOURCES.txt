@@ -3,6 +3,7 @@ setup.py
 twaddr/__init__.py
 twaddr/addrdata.py
 twaddr/county.csv
+twaddr/merge.csv
 twaddr/roadStreet.csv
 twaddr/tran.py
 twaddr/village.csv

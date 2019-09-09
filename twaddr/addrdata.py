@@ -53,30 +53,30 @@ def createDB():
     conn.commit()
 
     # VILLAGE
-    conn.execute('''CREATE TABLE VILLAGE
-                    (VILLAGE CHAR(30) NOT NULL,
-                    ENVILLAGE TEXT NOT NULL);''')
-    print('VILLAGE Table created successfully')
+    # conn.execute('''CREATE TABLE VILLAGE
+    #                 (VILLAGE CHAR(30) NOT NULL,
+    #                 ENVILLAGE TEXT NOT NULL);''')
+    # print('VILLAGE Table created successfully')
 
-    csvfile = open(villageCSV, 'r')
-    rows = csv.reader(csvfile)
+    #   csvfile = open(villageCSV, 'r')
+    # rows = csv.reader(csvfile)
 
-    for row in rows:
-        conn.execute('insert into VILLAGE values (?, ?);', (
-                    row[0],
-                    row[1]))
-    conn.commit()
-    if not DEBUG_PRINT:
-        for row in conn.execute("SELECT * FROM COUNTY LIMIT 10"):
-            print(row)
+    #   for row in rows:
+    #     conn.execute('insert into VILLAGE values (?, ?);', (
+    #                 row[0],
+    #                 row[1]))
+    # conn.commit()
+    # if not DEBUG_PRINT:
+    #     for row in conn.execute("SELECT * FROM COUNTY LIMIT 10"):
+    #         print(row)
 
-        for row in conn.execute("SELECT * FROM ROADSTREET LIMIT 10"):
-            print(row)
+    #       for row in conn.execute("SELECT * FROM ROADSTREET LIMIT 10"):
+    #         print(row)
 
-        for row in conn.execute("SELECT * FROM VILLAGE LIMIT 100"):
-            print(row)
+    #       for row in conn.execute("SELECT * FROM VILLAGE LIMIT 100"):
+    #         print(row)
 
-    conn.close()
+    #   conn.close()
 
 
 
